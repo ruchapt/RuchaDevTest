@@ -22,5 +22,5 @@ public with sharing class Test {
         return null;
     }
             
-    private String state = 'no';
+    private String state = 'yes';
 }
