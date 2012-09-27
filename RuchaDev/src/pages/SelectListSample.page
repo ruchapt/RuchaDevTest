@@ -1,0 +1,13 @@
+<apex:page controller="SelectListSample">
+	 <apex:form >
+	 <apex:actionFunction name="selectLanguage" action="{!test1}" rerender="out"/>
+	 
+        <apex:selectList onchange="selectLanguage()" value="{!countries}" multiselect="false" size="1">
+            <apex:selectOptions value="{!items}"/>
+        </apex:selectList><p/>
+
+        <apex:commandButton value="Test" action="{!test}"/>
+        
+       <apex:dataList value="{!countries}" var="c" id="out">{!c}</apex:dataList>
+    </apex:form>
+</apex:page>

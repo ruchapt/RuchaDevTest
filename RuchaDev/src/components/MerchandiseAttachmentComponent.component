@@ -1,0 +1,10 @@
+<apex:component controller="MerchandiseAttachments" access="global">
+
+		<apex:attribute name="merId" description="Selected merchandise" type="String" assignTo="{!merchandiseId}" />
+		
+		<apex:repeat var="a" value="{!merAttachments}">
+			{!a.Body}
+		</apex:repeat>
+	
+
+</apex:component>
